@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(233, 229, 231);
+  gap: 10px;
+  text-transform: uppercase;
+}
+.container {
+  background-color: white;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: center;
+  gap: 50px;
+
+  box-shadow: 1px 1px 5px rgb(196, 195, 195);
+  border-radius: 5px;
+}
+.container .rank {
+  padding: 15px 5px;
+  font-size: 1.1rem;
+}
+.container-1 .rank {
+  background-color: rgba(187, 187, 187, 0.438);
+}
+.container-2 .rank {
+  background: linear-gradient(
+    to right,
+    rgba(4, 116, 221, 0.5),
+    rgba(113, 8, 155, 0.5)
+  );
+  color: white;
+}
+.container-3 .rank {
+  color: white;
+  background: linear-gradient(
+    to right,
+    rgba(224, 125, 11, 0.5),
+    rgba(223, 44, 13, 0.5)
+  );
+}
+
+.container .price {
+  font-size: 2.5rem;
+}
+.container .price span {
+  font-size: 1rem;
+}
+.container .price i {
+  font-size: 1rem;
+  position: relative;
+  bottom: 15px;
+  right: 2px;
+}
+
+.container p {
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.container button {
+  padding: 15px 0;
+  background: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.container .primary {
+  background-color: black;
+  color: white;
+}
+.container ul {
+  list-style: none;
+  text-align: left;
+  text-transform: capitalize;
+}
+.container ul li {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.container ul .bi {
+  color: green;
+  margin-right: 5px;
+}
+
+@media (min-width: 1000px) {
+  body {
+    height: 100vh;
+  }
+  .container {
+    max-width: 320px;
+    height: 560px;
+  }
+}
+@media (max-width: 999px) {
+  body {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 600px) {
+  .container {
+    width: 60%;
+  }
+}
